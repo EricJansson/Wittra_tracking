@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Load your CSS file -->
+    <link rel="stylesheet" href="/css/wittra.css">
+
+</head>
+
+<body>
+
+    <div id="options">
+        <select id="selectDeviceDropdown" disabled></select>
+        <select id="selectDisplayModeDropdown">
+            <option value="path" selected>Path</option>
+            <option value="heatmap">Heatmap</option>
+            <option value="both">Both</option>
+        </select>
+        <br>
+        <input type="checkbox" id="toggleTagsButton" class="toggle-switch">
+        <label for="toggleTagsButton">Show position beacons</label>
+    </div>
+    <div id="deviceStatusMessage"></div>
+    <div id="wittraMapContainer">
+        <div id="wittraMap"></div>
+        <div id="wittraMapTagged"></div>
+        <canvas id="wittraHeatmapCanvas" width="600" height="600"></canvas>
+        <canvas id="wittraCanvas" width="600" height="600"></canvas>
+    </div>
+
+    <!-- Simpleheat -->
+    <script src="https://unpkg.com/simpleheat/simpleheat.js"></script>
+    <script src="/scripts/load_data.js"></script>
+    <script src="/scripts/wittra.js"></script>
+    <script src="/scripts/heatmap.js"></script>
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/button_functions.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

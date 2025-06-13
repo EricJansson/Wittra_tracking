@@ -1,0 +1,64 @@
+#options {
+    margin: auto;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
+#selectDeviceDropdown {
+    margin-bottom: 8px;
+}
+
+#deviceStatusMessage {
+    height: 20px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-family: arial;
+}
+
+#wittraMapContainer {
+    /* This is the rotation of the map.
+    transform: rotate(-39.2deg);
+    */
+    position: relative;
+    border: 1px solid;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+
+#wittraMap,
+#wittraMapTagged {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    pointer-events: none;
+
+
+    background-image: url("/images/wittra_map_2.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+
+#wittraMap {
+    background-image: url("/images/wittra_map_1.png");
+}
+
+
+#wittraCanvas,
+#wittraHeatmapCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    pointer-events: none;
+}
+
+#wittraHeatmapCanvas {
+    opacity: 0;
+}
